@@ -32,6 +32,7 @@ class homepage extends Component {
   }
 
   render() {
+    // ROUDY I DO NOT NEED ALL THE OBJECTS- FIND A WAY TO ONLY GET 100 AT A TIME OR JUST WHAT WE NEED OK
     console.log(this.state);
     return (
       <div>
