@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
+import Homepage from './pages/homepage/homepage.components';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Homepage />
     </div>
   );
 }
 
 export default App;
+
+/**
+ *
+ * RETURN AND PAY ADDRESS THIS -  IT APPEARS THAT
+ * ENV FILES ARE SOMEHOW PACKAGED IN THE BUILD AND THUS
+ * YOUR SECRET KEY WILL BE EXPOSED.
+ *
+ * console.log(process.env.THE NAME OF THE VARIABLE YOU CREATED);
+ *
+ * You should really only save API keys or secrets
+ *  in your backend such as Node / Express.
+ *
+ *  You can have your client send a request to your backend API,
+ *  which can then make the actual API call with
+ *  the API key and send the data back to your client.
+ */
